@@ -20,13 +20,11 @@ GROUP_03_C1/
     01_grd_severity_analysis.ipynb   main notebook (run this)
   data/
     input/
-      grd_2020_reduced.csv
       grd_2021_reduced.csv           raw extract, columns used only, before cleaning
       grd_2022_reduced.csv           (source: GRD_PUBLICO_EXTERNO_2022.txt)
       grd_2023_reduced.csv
       grd_2024_reduced.csv
     output/
-      grd_2020_cleaned.csv
       grd_2021_cleaned.csv           cleaned per-year table (post grouping/filtering)
       grd_2022_cleaned.csv
       grd_2023_cleaned.csv
@@ -56,7 +54,7 @@ GROUP_03_C1/
 
 - **GRD (Diagnosis-Related Groups), 2021, 2023, 2024:** FONASA/DEIS open data, files named `GRD_PUBLICO_<year>.txt`, pipe-separated (`|`), latin1 encoding for 2021 and 2024, UTF-16 for 2023.
 - **GRD 2022:** published by FONASA as `GRD_PUBLICO_EXTERNO_2022.txt` (UTF-16 encoding) instead of `GRD_PUBLICO_2022`. Verified via `PREVISION` distribution (Section 2 of the notebook) to represent the same public-network population as other years, not a distinct cohort, before including it in the multi-year trend.
-- Retrieved via the course's `descargar_datos_W1_actualizado.py` script and manual extraction (some years required 7-Zip for `.rar`/`.zip` archives). Exact download date: [fill in].
+- Retrieved via the course's `descargar_datos_W1_actualizado.py` script and manual extraction (some years required 7-Zip for `.rar`/`.zip` archives), from the Chilean Ministry of Health (MINSAL/FONASA/DEIS) open-data repository. Exact download date: 24 September 2026.
 - Full original files are not included in this archive due to size; `data/input/*_reduced.csv` are the reduced extracts (needed columns only) that reproduce our cleaning steps. The notebook (Section 1 and 8) documents the exact `usecols` filter used to produce them from the originals.
 
 ## Known issues
