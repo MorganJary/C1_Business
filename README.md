@@ -20,11 +20,13 @@ GROUP_03_C1/
     01_grd_severity_analysis.ipynb   main notebook (run this)
   data/
     input/
+      grd_2020_reduced.csv
       grd_2021_reduced.csv           raw extract, columns used only, before cleaning
       grd_2022_reduced.csv           (source: GRD_PUBLICO_EXTERNO_2022.txt)
       grd_2023_reduced.csv
       grd_2024_reduced.csv
     output/
+      grd_2020_cleaned.csv
       grd_2021_cleaned.csv           cleaned per-year table (post grouping/filtering)
       grd_2022_cleaned.csv
       grd_2023_cleaned.csv
